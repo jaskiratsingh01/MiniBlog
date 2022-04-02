@@ -19,13 +19,13 @@
                 <div class="p-6 bg-white border-b border-gray-800">
                     
 
-                    <table class="table-auto table-dark">
+                    <table class="table table-striped table-dark">
                     <thead>
                         <tr>
-                        <th scope="row">Name</th>
-                        <th scope="row">Title</th>
-                        <th scope="row">Body</th>
-                        <th scope="row">Actions</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Body</th>
+                        <th scope="col">Actions</th>
                         </tr>
                     </thead>
                     <tbody>
