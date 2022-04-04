@@ -6,7 +6,7 @@
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
                     <a href="{{ route('dashboard') }}">
-                        <x-application-logo class="block h-10 w-auto fill-current text-gray-600" />
+                        <h1>Mini Blog</h1>
                     </a>
                 </div>
 
@@ -18,7 +18,7 @@
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link :href="route('post_index')" :active="request()->routeIs('post_index')">
-                        {{ __('Post') }}
+                        {{ __('New Post') }}
                     </x-nav-link>
                 </div>
             </div>

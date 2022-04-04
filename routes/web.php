@@ -19,7 +19,7 @@ use App\Http\Controllers\HomeController;
 
 Route::get('/', [HomeController::class, 'show_post'])->name('home');
 
-
+Route::get('/dashboard',[DashboardController::class, 'show_post'])->middleware(['auth'])->name('dashboard');
 
 Route::get('/post',[PostController::class, 'index'])->middleware(['auth'])->name('post_index');
 
@@ -27,10 +27,10 @@ Route::post('/post',[PostController::class, 'create'])->middleware(['auth'])->na
 
 
 
-Route::get('/dashboard',[DashboardController::class, 'show_post'])->middleware(['auth'])->name('dashboard');
+Route::get('/post/edit/{id}', [PostController::class, 'edit'])->middleware(['auth'])->name('post_edit');
 
-Route::put('/post/edit/{id}', [PostController::class, 'update'])->middleware(['auth'])->name('post
-_update');
+
+Route::put('/post/edit/{id}', [PostController::class, 'update'])->middleware(['auth'])->name('post_update');
 
 Route::get('/post/delete/{id}',[PostController::class, 'destroy'])->middleware(['auth'])->name('post_destroy');
 
